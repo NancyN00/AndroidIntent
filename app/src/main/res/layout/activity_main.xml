@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/uscall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Call"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ussms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="40dp"
+        android:text="SMS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uscall" />
+
+    <Button
+        android:id="@+id/usweb"
+        android:layout_width="93dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="200dp"
+        android:text="Web"
+        app:layout_constraintStart_toStartOf="@+id/ussms"
+        app:layout_constraintTop_toBottomOf="@+id/ussms" />
+
+    <Button
+        android:id="@+id/usphoto"
+        android:layout_width="126dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="172dp"
+        android:text="Take Photo"
+        app:layout_constraintStart_toStartOf="@+id/usweb"
+        app:layout_constraintTop_toBottomOf="@+id/usweb" />
+
+    <Button
+        android:id="@+id/usemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="2dp"
+        android:text="Email"
+        app:layout_constraintEnd_toEndOf="@+id/usweb"
+        app:layout_constraintTop_toBottomOf="@+id/usweb" />
+
+    <Button
+        android:id="@+id/usmpesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="MPESA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ussms" />
+</androidx.constraintlayout.widget.ConstraintLayout>
